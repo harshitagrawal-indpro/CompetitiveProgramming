@@ -1,10 +1,15 @@
+#include <bits/stdc++.h>
+using namespace std;
 // 2) Vector is the dynamic arrays with continuous memory allocs 
 // it can be initialized and declared by 
 
-// vector <int> v1= {1,2,3,4,5,6};
-// also initialization size vector <int> v2(5);
-// also intialisation with size and value vector <int> v2(5,20);
-// also initialize as a copy of another as vector <int> v3(v2);
+vector <int> v1= {1,2,3,4,5,6};
+// also initialization size 
+vector <int> v2(5);
+// also intialisation with size and value 
+vector <int> v2(5,20);
+// also initialize as a copy of another as 
+vector <int> v3(v2);
 
 // add and removing elements in a vector 
 // we can use the push_back or emplace_back 
@@ -13,14 +18,14 @@
 // (using iterators basically two kinds one is iterator (begin or end ) and other is reverse_iterator (rbegin or rend)
 
 // you can initiate the iterator as 
-// vector <int>::iterator i1= v1.begin();
+vector <int>::iterator i1= v1.begin();
 // or auto i1 = v1.begin();
 
-// vector <int>::iterator i1= v1.end();
+vector <int>::iterator i1= v1.end();
 // or auto i1 = v1.end();
 
 // also for reverse one you can use 
-// vector <int>::reverse_iterator i2 = v1.rbegin();
+vector <int>::reverse_iterator i2 = v1.rbegin();
 // or auto i2= v1.rbegin();
 
 // vector <int>::reverse_iterator i2 = v1.rend();
