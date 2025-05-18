@@ -12,6 +12,9 @@ int main() {
   for(int i =0 ; i<n ; i++){
       cin >> arr[i] ;
   }
+
+  // checking the value of n and k
+  if (k>n ) k= k%n;
   // step  1 taking the temp list to store 
   for(int i=0 ; i<k ; i++){
       temp[i]=arr[i];
