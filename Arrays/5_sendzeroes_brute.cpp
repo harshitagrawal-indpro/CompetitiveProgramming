@@ -1,0 +1,29 @@
+// we can make moving the zeroes to the end using bruteforce method 
+
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    int n ;
+    cin >> n ;
+    int arr[n];
+    for (int i=0; i<n; i++){
+        cin>> arr[i];
+    }
+    int j=0;
+    for (int i=0; i<n; i++){
+        if (arr[i]!=0){
+            arr[j]=arr[i];
+            j++;
+        }
+    }
+    for (int i=j;i<n;i++){
+        arr[i]=0;
+    }
+    for (int i=0; i<n; i++){
+        cout << arr[i] << " ";
+    }
+}
+
+// TC = O(N)
+// SC = O(1)
