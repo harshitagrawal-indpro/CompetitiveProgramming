@@ -14,6 +14,18 @@ int main(){
             }else{
                 arr1[k]=arr[i]; k++; i++;
             }
+        }else if (arr[i]>arr[j]){
+            if (arr[j]==arr[k-1]){
+                j++;
+            }else{
+                arr1[k]=arr[j]; k++; j++;
+            }
+        }else{
+            if (arr[i]==arr[k-1]){
+                i++; j++;
+            }else{
+                arr1[k]=arr[i]; k++; i++; j++;
+            }
         }
     }
 }
