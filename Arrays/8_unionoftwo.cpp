@@ -42,4 +42,7 @@ int main(){
             arr1[k]=arr[j]; k++; j++;
         }
     }
+    for (int i=0;i<k;i++){
+        cout<<arr1[i]<<" ";
+    }
 }
