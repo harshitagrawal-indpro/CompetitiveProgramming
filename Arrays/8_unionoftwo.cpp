@@ -9,19 +9,19 @@ int main(){
     int i=0, j=0,k=0;
     while (i<a && j<b){
         if (arr[i]<arr[j]){
-            if (arr[i]==arr[k-1]){
+            if (k> 0 && arr[i]==arr[k-1]){
                 i++;
             }else{
                 arr1[k]=arr[i]; k++; i++;
             }
         }else if (arr[i]>arr[j]){
-            if (arr[j]==arr[k-1]){
+            if (k> 0 && arr[j]==arr[k-1]){
                 j++;
             }else{
                 arr1[k]=arr[j]; k++; j++;
             }
         }else{
-            if (arr[i]==arr[k-1]){
+            if (k> 0 && arr[i]==arr[k-1]){
                 i++; j++;
             }else{
                 arr1[k]=arr[i]; k++; i++; j++;
@@ -36,7 +36,7 @@ int main(){
         }
     }
     while (j<b){
-        if (arr[j]==arr[k-1]){
+        if (k> 0 && arr[j]==arr[k-1]){
             j++;
         }else{
             arr1[k]=arr[j]; k++; j++;
