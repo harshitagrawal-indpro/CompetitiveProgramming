@@ -7,3 +7,6 @@ using namespace std;
 
 
 // now sort
+
+
+// now get the second largest number
