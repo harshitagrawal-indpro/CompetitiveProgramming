@@ -1,14 +1,17 @@
-#include <bits/stdc++.h>
+// this is the elements that can repeat atmost twice 
+#include<bits/stdc++.h>
 using namespace std;
 
-class solution{
-public:
-    bool isSorted(int arr[],int n){
-        for(int i=0 ; i<n-1;i++){
-            if (arr[i]>arr[i+1]){
-                return false;
-            }
-        }
-        return true;
+int removeDup(vector<int>& arr) {
+       int i=2;
+       int n = arr.size();
+       for(int k=2 ; k<n ; k++){
+           if(arr[k]!=arr[i-2]){
+               arr[i]=arr[k];
+               i++;
+           }
+       }
+       return i;
+        
     }
-};
+    
