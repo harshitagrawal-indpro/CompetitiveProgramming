@@ -15,4 +15,4 @@ void moveZerosToFront(int arr[], int n){
         
     }
 
-//
+// so this is a best
