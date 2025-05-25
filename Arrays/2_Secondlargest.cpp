@@ -1,12 +1,32 @@
-// to find the largest number using sort first and then get the second largest number 
-
-
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-
-
-// now sort
-
-
-// now get the second largest number
+class solution{
+public:
+    int secondLargestElement(int arr[], int n){
+        int la,sl;
+        int i=0, j=1;
+        while(arr[i]==arr[j]){
+            j++;
+        }
+        if (arr[i]<arr[j]){ 
+            la=arr[j];
+            sl=arr[i];}
+        else {
+            la=arr[i];
+            sl=arr[j] ;}
+        for (int i=2 ; i< n ; i++){
+            if (arr[i]>la && arr[i]>sl){
+                sl= la;
+                la= arr[i];
+            }
+            else if (arr[i]<la && arr[i]>sl){
+                sl=arr[i];
+            }
+            
+        }
+        return sl;
+        
+        
+    }
+};
