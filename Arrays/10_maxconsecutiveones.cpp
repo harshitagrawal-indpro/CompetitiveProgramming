@@ -20,3 +20,5 @@ int main() {
   cout<< max << endl;
   return 0;
 }
+
+//TC = n ans SC =1
