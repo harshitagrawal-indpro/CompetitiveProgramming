@@ -1,0 +1,1 @@
+// its a good method to solve and fine the missing number 
