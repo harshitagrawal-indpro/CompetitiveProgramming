@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-  // bruteforce method 
+  // better method 
   int n ;
   cin >> n ;
   int arr[n];
